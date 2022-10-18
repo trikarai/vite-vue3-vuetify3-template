@@ -3,6 +3,9 @@
     <component :is="layout">
       <router-view />
     </component>
+
+    <app-overlay/>
+
   </v-app>
 </template>
 
@@ -11,15 +14,13 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 export default {
-  name: 'App',
-  setup() {
-    const route = useRoute()
-    const layout = computed(() => {
-      return (route.meta.layout ?? 'empty') + '-layout'
-    })
-
-    return { layout }
-  }
-
+    name: "App",
+    setup() {
+        const route = useRoute();
+        const layout = computed(() => {
+            return (route.meta.layout ?? "empty") + "-layout";
+        });
+        return { layout };
+    }
 }
 </script>

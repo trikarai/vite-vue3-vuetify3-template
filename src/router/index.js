@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuth } from '@/store/auth/Auth'
+import { useModal } from '@/store/modal/Modal'
 
 const routes = []
 
@@ -30,17 +31,22 @@ router.beforeEach((to, from, next) => {
     // ✅ This will work because the router starts its navigation after
     // the router is installed and pinia will be installed too
     const auth = useAuth()
- 
+    const modal = useModal()
+
+    modal.overlay = true
+
     if (to.matched.some((m) => m.meta.requireAuth) && !auth.isAuthenticated) {
         next({ path: "/", query: { redirect: to.fullPath } })
-    } 
+    }
     else {
         next();
     }
 })
 
 router.afterEach(() => {
-   
+    const modal = useModal()
+
+    modal.overlay = false
 })
 
 export default router
