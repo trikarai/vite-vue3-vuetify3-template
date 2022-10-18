@@ -58,8 +58,8 @@ export default {
             if (this.v$.$invalid) return
 
             this.auth.login(this.form)
-                .then((res) => {
-                    console.log(res)
+                .then(() => {
+                    this.$router.replace({ path: '/dashboard' })
                 })
                 .finally(() => { })
         }
