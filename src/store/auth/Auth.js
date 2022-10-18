@@ -27,12 +27,13 @@ export const useAuth = defineStore('Auth', {
             return api
                 .post("/auth/login", payload)
                 .then((res) => {
-                    const { token, refresh_token } = res.data.data;
-                    const decoded = jwt_decode(token);
+                    const { token, refresh_token } = res.data.data
+                    const decoded = jwt_decode(token)
 
                     this.token = token
                     this.user = decoded
                     this.refreshToken = refresh_token
+                    return res.data
                 })
                 .catch((err) => {
                     return Promise.reject(err);

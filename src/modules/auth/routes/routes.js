@@ -1,4 +1,4 @@
-import LayoutAuth from '../../../layouts/auth/LayoutAuth.vue'
+import AuthLayout from '@/layouts/auth/AuthLayout.vue'
 
 export default [
     {
@@ -6,7 +6,7 @@ export default [
         name: 'Login',
         component: () => import('@/modules/auth/pages/LoginPage.vue'),
         meta: {
-            layout: LayoutAuth
+            layout: AuthLayout
         }
     }
 ]

@@ -3,9 +3,7 @@ import { useAuth } from '@/store/auth/Auth'
 
 const http = axios.create({
     baseURL: import.meta.env.VITE_API_URL,
-    headers: {
-        "Content-type": "application/json",
-    },
+    // headers: { issuer: "WEBAPP", "accept-language": "id" },
 });
 
 http.interceptors.request.use((config) => {
@@ -41,6 +39,7 @@ http.interceptors.response.use(
 
         const originalConfig = error?.config
 
+        const oriUrl = "/auth/login"
         const refreshUrl = "/auth/refresh-token"
 
         if (originalConfig.url === refreshUrl && error.response?.status === 401) {
@@ -84,6 +83,7 @@ http.interceptors.response.use(
 
 
         return Promise.reject(error)
-    })
+    }
+)
 
 export default http

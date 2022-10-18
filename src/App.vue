@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <component :is="layout">
-      <router-view />
+      <v-main>
+        <router-view />
+      </v-main>
     </component>
   </v-app>
 </template>
@@ -20,6 +22,6 @@ export default {
 
     return { layout }
   }
- 
+
 }
 </script>
