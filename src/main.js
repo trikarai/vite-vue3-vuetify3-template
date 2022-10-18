@@ -3,7 +3,9 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import { pinia } from "./store"
 import { loadFonts } from './plugins/webfontloader'
+
 import AppGlobalComponents from './components/app/AppGlobals'
+import LayoutGlobals from './components/layouts/LayoutGlobals'
 
 import router from './router'
 
@@ -13,5 +15,6 @@ createApp(App)
   .use(vuetify)
   .use(pinia)
   .use(router)
+  .use(LayoutGlobals)
   .use(AppGlobalComponents)
   .mount('#app')

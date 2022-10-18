@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <component :is="layout">
-      <v-main>
-        <router-view />
-      </v-main>
+      <router-view />
     </component>
   </v-app>
 </template>
@@ -17,7 +15,7 @@ export default {
   setup() {
     const route = useRoute()
     const layout = computed(() => {
-      return (route.meta.layout ?? 'div')
+      return (route.meta.layout ?? 'empty') + '-layout'
     })
 
     return { layout }
