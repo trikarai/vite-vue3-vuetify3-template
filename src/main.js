@@ -4,8 +4,8 @@ import vuetify from './plugins/vuetify'
 import { pinia } from "./store"
 import { loadFonts } from './plugins/webfontloader'
 
-import AppGlobalComponents from './components/app/AppGlobals'
-import LayoutGlobals from './components/layouts/LayoutGlobals'
+import AppGlobalComponents from './components/app'
+import LayoutGlobals from './components/layouts'
 
 import router from './router'
 
