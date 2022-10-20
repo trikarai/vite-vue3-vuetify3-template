@@ -1,12 +1,11 @@
-
 export function useCapitalize(data) {
-    let capitalized = [];
-    data.split(" ").forEach((word) => {
-        capitalized.push(
-            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-        );
-    });
-    return capitalized.join(" ");
+  let capitalized = [];
+  data.split(" ").forEach((word) => {
+    capitalized.push(
+      word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    );
+  });
+  return capitalized.join(" ");
 }
 
 export function useCurrencyFormat(data, options) {
@@ -14,7 +13,7 @@ export function useCurrencyFormat(data, options) {
     minimumFractionDigits: 0,
     style: "currency",
     currency: "IDR",
-  }  
+  };
 
   if (!data) {
     return "-";

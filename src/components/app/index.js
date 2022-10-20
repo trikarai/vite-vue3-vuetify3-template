@@ -1,18 +1,19 @@
-import _ from 'lodash'
+import _ from "lodash";
 
 export default {
   install(app) {
-    const componentFiles = import.meta.globEager(
-      './*.vue'
-    );
+    const componentFiles = import.meta.globEager("./*.vue");
 
     Object.entries(componentFiles).forEach(([path, m]) => {
       const componentName = _.upperFirst(
-        _.camelCase(path.split('/').pop().replace(/\.\w+$/, ''))
-      )
-      app.component(
-        `${componentName}`, m.default
-      )
-    })
+        _.camelCase(
+          path
+            .split("/")
+            .pop()
+            .replace(/\.\w+$/, "")
+        )
+      );
+      app.component(`${componentName}`, m.default);
+    });
   },
-}
+};

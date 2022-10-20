@@ -1,19 +1,17 @@
 <template>
-    <v-chip>{{ title }}</v-chip>
+  <v-chip>{{ title }}</v-chip>
 </template>
 
 <script>
 export default {
-    props: {
-        title: {
-            type: [String, Number],
-            default: 'Title'
-        },
+  props: {
+    title: {
+      type: [String, Number],
+      default: "Title",
     },
-    setup() {
-    }
-}
+  },
+  setup() {},
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
