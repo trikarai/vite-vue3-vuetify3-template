@@ -1,25 +1,16 @@
 <template>
-  <v-card class="pa-5 w-auto">
+  <v-card class="pa-5 w-100">
     <v-row>
       <v-col cols="12">
-        <v-text-field
-          variant="outlined"
-          label="E-mail"
-          v-model="form.email"
-          :error-messages="v$.email?.$errors"
-        >
+        <v-text-field variant="outlined" label="E-mail" v-model="form.email" :error-messages="v$.email?.$errors">
           <template v-slot:message="{ message }">
             {{ message.$message }}
           </template>
         </v-text-field>
       </v-col>
       <v-col cols="12">
-        <v-text-field
-          variant="outlined"
-          label="Password"
-          v-model="form.password"
-          :error-messages="v$.password?.$errors"
-        >
+        <v-text-field variant="outlined" label="Password" v-model="form.password"
+          :error-messages="v$.password?.$errors">
           <template v-slot:message="{ message }">
             {{ message.$message }}
           </template>
@@ -33,15 +24,17 @@
 </template>
 
 <script>
-import { useAuth } from "@/store/auth/Auth";
-import { computed, reactive } from "vue";
+import { useAuth } from "@/store/auth/Auth"
+import { useModal } from "@/store/modal/Modal"
+import { computed, reactive } from "vue"
 
-import useVuelidate from "@vuelidate/core";
-import { required, email } from "@vuelidate/validators";
+import useVuelidate from "@vuelidate/core"
+import { required, email } from "@vuelidate/validators"
 
 export default {
   setup() {
-    const auth = useAuth();
+    const auth = useAuth()
+    const modal = useModal()
 
     const form = reactive({
       email: "",
@@ -57,7 +50,7 @@ export default {
 
     const v$ = useVuelidate(rules, form, { $autoDirty: true });
 
-    return { v$, auth, form };
+    return { v$, auth, form, modal };
   },
   methods: {
     login() {
@@ -69,10 +62,15 @@ export default {
         .then(() => {
           this.$router.replace({ path: "/dashboard" });
         })
-        .finally(() => {});
+        .catch((res) => {
+          this.modal.SET_ERROR(res)
+        })
+        .finally(() => { });
     },
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

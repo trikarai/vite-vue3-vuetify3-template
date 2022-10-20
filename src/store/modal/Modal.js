@@ -13,6 +13,7 @@ export const useModal = defineStore("Modal", {
 
     error: false,
     errorType: "string",
+    errorTitle: "Gagal",
     errorMessage: "",
     errorMessages: [],
   }),

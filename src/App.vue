@@ -5,6 +5,10 @@
     </component>
 
     <app-overlay />
+    <teleport to="body">
+      <app-modal-success />
+      <app-modal-error />
+    </teleport>
   </v-app>
 </template>
 

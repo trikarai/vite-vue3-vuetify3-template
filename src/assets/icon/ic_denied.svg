@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="134px" viewBox="0 0 280 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5D8946F5-7499-4329-A927-22E3A3C8ED46</title>
+    <defs>
+        <linearGradient x1="50%" y1="-5.05260132%" x2="50%" y2="60.5636954%" id="linearGradient-1">
+            <stop stop-color="#FF6000" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Employee---Assign-Manager" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="a.16-Assign-Manager-Detail---Pop-up-Ditolak-2" transform="translate(-543.000000, -168.000000)">
+            <g id="Group-6" transform="translate(543.000000, 171.000000)">
+                <g id="ic_sukes" transform="translate(0.000000, 16.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.141397166">
+                    <ellipse id="Oval" cx="140" cy="57.5" rx="140" ry="57.5"></ellipse>
+                </g>
+                <g id="Group" transform="translate(86.000000, 0.000000)">
+                    <path d="M54.9991771,6.111397 C27.9991233,6.111397 6.11125922,27.9997396 6.11125922,54.9993138 C6.11125922,81.9988881 27.9991233,103.887231 54.9991771,103.887231 C81.9992243,103.887231 103.887086,81.9988881 103.887086,54.9993138 C103.887086,27.9997396 81.9992243,6.111397 54.9991771,6.111397 Z" id="Path" fill="#E02020" fill-rule="nonzero"></path>
+                    <path d="M54.9991485,0 C77.2442248,0 97.2989092,13.4000935 105.811736,33.9518434 C114.324707,54.50369 109.619203,78.1599595 93.8894162,93.8896517 C78.1597311,109.619224 54.5036219,114.324644 33.9518828,105.811785 C13.4001341,97.2989785 0,77.2443464 0,54.9993138" id="Path" stroke="#E02020" stroke-width="4.07399682" stroke-linejoin="round"></path>
+                    <path d="M0,54.9993138 C0,40.4126087 5.79445397,26.4233175 16.1088013,16.1089392 C26.4231486,5.79456082 40.41243,0 54.9991485,0" id="Path" stroke="#E02020" stroke-width="4.07399682" stroke-linejoin="round" stroke-dasharray="4.073996878643833"></path>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" opacity="0.15" points="67.5914531 24.4443658 50.925111 41.1106641 34.2587689 24.4443658 20.3701511 38.333423 37.0364932 54.9993138 20.3701511 71.6652047 34.2587689 85.5542618 50.925111 68.8879636 67.5914531 85.5542618 81.4800708 71.6652047 64.8137287 54.9993138 81.4800708 38.333423 67.5914531 24.4443658"></polygon>
+                    <polygon id="Path" fill="#FDFDFD" fill-rule="nonzero" points="71.6655599 24.4443658 54.9992178 41.1106641 38.3328757 24.4443658 24.4442567 38.333423 41.1106 54.9993138 24.4442567 71.6652047 38.3328757 85.5542618 54.9992178 68.8879636 71.6655599 85.5542618 85.5541776 71.6652047 68.8878355 54.9993138 85.5541776 38.333423"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

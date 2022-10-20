@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="154px" viewBox="0 0 280 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2F98B33C-D47F-4906-8073-C6AFF245462C@1,5x</title>
+    <defs>
+        <linearGradient x1="50%" y1="-5.05260132%" x2="50%" y2="60.5636954%" id="linearGradient-1">
+            <stop stop-color="#FF6000" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M60,0 C26.914673,0 0,26.914673 0,60 C0,93.085327 26.914673,120 60,120 C93.085327,120 120,93.085327 120,60 C120,26.914673 93.085327,0 60,0 Z" id="path-2"></path>
+        <filter x="-21.7%" y="-15.8%" width="143.3%" height="143.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.768627451   0 0 0 0 0.549019608  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.-Register---fill-pop-up-sukses" transform="translate(-543.000000, -224.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(487.000000, 170.000000)">
+                <g id="ic_sukes" transform="translate(56.000000, 62.000000)">
+                    <ellipse id="Oval" fill="url(#linearGradient-1)" opacity="0.141397166" cx="140" cy="88.5" rx="140" ry="57.5"></ellipse>
+                    <g id="check" transform="translate(80.000000, 0.000000)">
+                        <g id="Path">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="#00C48C" xlink:href="#path-2"></use>
+                        </g>
+                        <path d="M90.4030729,46.2390409 L54.9999102,81.4135879 C53.9377855,82.468884 52.5435598,83 51.1493339,83 C49.755108,83 48.3608824,82.468884 47.2987576,81.4135879 L29.597675,63.8263144 C27.4674417,61.7107684 27.4674417,58.2902223 29.597675,56.1746763 C31.7269109,54.0581392 35.1685943,54.0581392 37.2988277,56.1746763 L51.1493339,69.9361308 L82.7019203,38.5874028 C84.8311562,36.4708657 88.2728395,36.4708657 90.4030729,38.5874028 C92.532309,40.7029488 92.532309,44.1225038 90.4030729,46.2390409 Z" id="Path" fill="#FAFAFA"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
