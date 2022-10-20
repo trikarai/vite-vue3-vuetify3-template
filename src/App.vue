@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <component :is="layout">
-      <router-view />
-    </component>
-
+    <component :is="layout" />
     <app-overlay />
     <teleport to="body">
       <app-modal-success />
