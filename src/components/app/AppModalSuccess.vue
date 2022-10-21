@@ -4,7 +4,7 @@
             <v-card class="pa-5" height="auto" rounded="xl">
                 <v-row no-gutters>
                     <v-col cols="12" class="d-flex justify-end">
-                        <v-btn size="small" variant="icon" icon="mdi-close" @click="close"></v-btn>
+                        <v-btn size="small" variant="plain" icon="mdi-close" @click="close"></v-btn>
                     </v-col>
                     <v-col cols="12" class="d-flex justify-center">
                         <v-img contain max-height="100" :src="icon"></v-img>
