@@ -29,7 +29,7 @@ import { useModal } from "@/store/modal/Modal"
 import { computed, reactive } from "vue"
 
 import useVuelidate from "@vuelidate/core"
-import { required, email } from "@vuelidate/validators"
+import { required, email } from "@/plugins/validator"
 
 export default {
   setup() {
