@@ -16,5 +16,6 @@
 ## Validation
 * vuelidate 2.0.0
 
+## Linter
 * ESLint
 * Prettier
