@@ -8,5 +8,14 @@ export default {
         hello: 'hello world',
         greeting: 'good morning, world!'
     },
-    myAccount: "My Account"
+    myAccount: "My Account",
+
+    //field label
+    fields: {
+        first_name: "First Name",
+        last_name: "Last Name",
+        email: "Email",
+        phone_number: "Phone",
+        password: "Password",
+    }
 }

@@ -7,7 +7,13 @@ const { createI18nMessage } = validators;
 
 // const messagePath = ({ $validator }) => `${i18n.global.t(`validations.${$validator}`)}`
 
-const withI18nMessage = createI18nMessage({ t: i18n.global.t.bind(i18n) });
+const messagePath = ({ $validator }) => `validations.${$validator}`;
+const messageParams = (params) => ({
+    ...params,
+    _field_: params._field_ ? i18n.global.t(`fields.${params._field_}`) : i18n.global.t(`fields.${params.property}`),
+});
+
+const withI18nMessage = createI18nMessage({ t: i18n.global.t.bind(i18n), messagePath, messageParams });
 
 export const required = withI18nMessage(validators.required);
 export const minLength = withI18nMessage(validators.minLength, { withArguments: true });
