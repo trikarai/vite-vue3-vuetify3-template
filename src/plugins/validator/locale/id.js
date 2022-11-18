@@ -12,6 +12,6 @@ export default {
         decimal: "Value harus desimal",
         sameAs: "Value harus sama dengan value yang lainnya",
         minValue: "Minimal value yang diperbolehkan itu {min}",
-        maxValue: "Ma,ksimum value yang diperbolehkan itu {max}"
+        maxValue: "Maksimum value yang diperbolehkan itu {max}"
     }
 }
