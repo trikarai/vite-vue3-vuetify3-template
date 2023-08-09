@@ -18,7 +18,10 @@
         </v-text-field>
       </v-col>
       <v-col cols="12" class="d-flex justify-end">
-        <v-btn @click="login">Login</v-btn>
+        <v-btn @click="login">{{ $t('auth.login') }}</v-btn>
+      </v-col>
+      <v-col cols="12" class="d-flex justify-end">
+        {{ $t('auth.forgotPassword') }}
       </v-col>
     </v-row>
   </v-card>
@@ -72,6 +75,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
